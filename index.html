@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Sandbox</title>
+</head>
+<body>
+    <script>
+        //Return the Booleans values
+    function esMenorQue (a, b){
+
+        // if (a < b) {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
+
+        return a < b;
+    }
+
+    console.log(esMenorQue (6, 3));
+
+//Early return pattern
+
+function myFunction (){
+    console.log("Hello");
+    return "World";
+    console.log("Bye");
+}
+
+console.log(myFunction());
+
+//Another Example:
+function calculateSquareRoot (number){
+    if (number < 0) {
+        return undefined;
+    }
+    return Math.sqrt(number);
+
+}
+
+console.log(calculateSquareRoot(-5));
+
+
+
+
+    </script>
+
+
+</body>
+</html>
